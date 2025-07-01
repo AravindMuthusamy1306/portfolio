@@ -81,8 +81,6 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-
-        /* Header */
         header {
             position: fixed;
             top: 0;
@@ -185,8 +183,6 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-
-        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -242,8 +238,6 @@
             40% {transform: translateY(-20px) translateX(-50%);}
             60% {transform: translateY(-10px) translateX(-50%);}
         }
-
-        /* About Section */
         .about-content {
             max-width: 700px;
             margin: 0 auto;
@@ -269,8 +263,6 @@
             margin-top: 2rem;
             font-style: italic;
         }
-
-        /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -324,8 +316,6 @@
             color: var(--blue-primary);
             margin-right: 10px;
         }
-
-        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -427,8 +417,6 @@
         .project-links a:hover {
             color: var(--blue-dark);
         }
-
-        /* Resume Section */
         .resume-content {
             max-width: 800px;
             margin: 0 auto;
@@ -517,11 +505,9 @@
             text-align: center;
             margin-top: 3rem;
         }
-
-        /* Contact Section */
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr ;
             gap: 3rem;
         }
 
