@@ -73,9 +73,18 @@
         });
         
         // Form submission
-        const contactForm = document.querySelector('.contact-form form');
-        contactForm.addEventListener('submit', (e) => {
+        // Form handling for testing
+        const form = document.querySelector('#contact form');
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
-        });
+  
+        const formData = {
+            name: form.querySelector('#name').value,
+            email: form.querySelector('#email').value,
+            message: form.querySelector('#message').value
+        };
+  
+        console.log('Form submission:', formData);
+        alert('Message sent successfully! Thank you for the response!!');
+        form.reset();
+});
