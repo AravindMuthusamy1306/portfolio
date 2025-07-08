@@ -1,4 +1,4 @@
- // Mobile Menu Toggle
+ 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
@@ -6,7 +6,7 @@
             navLinks.classList.toggle('active');
         });
         
-        // Theme Toggle
+        
         const themeToggle = document.getElementById('theme-toggle');
         const themeIcon = themeToggle.querySelector('i');
         
@@ -22,7 +22,7 @@
             }
         });
         
-        // Smooth Scrolling
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -36,10 +36,10 @@
                         behavior: 'smooth'
                     });
                     
-                    // Close mobile menu if open
+                    
                     navLinks.classList.remove('active');
                     
-                    // Update active link
+                    
                     document.querySelectorAll('.nav-links a').forEach(link => {
                         link.classList.remove('active');
                     });
@@ -47,8 +47,7 @@
                 }
             });
         });
-        
-        // Highlight active section in navigation
+    
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-links a');
@@ -70,12 +69,4 @@
                     link.classList.add('active');
                 }
             });
-        });
-        
-        // Form submission
-        const contactForm = document.querySelector('.contact-form form');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
         });
